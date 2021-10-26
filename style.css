@@ -1,0 +1,197 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark_blue: hsl(249, 10%, 26%);
+    --grayish_blue: hsl(246, 25%, 77%);
+    --white: hsl(334, 30%, 95%);
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('images/bg-intro-desktop.png');
+    background-color: var(--red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form,
+.trial-card {
+    box-shadow: 1px 10px 2px -3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 10px 2px -3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 10px 2px -3px rgba(0, 0, 0, 0.15);
+}
+
+.text-container {
+    padding: 6rem 0 4rem 0;
+}
+.text-container h1 {
+    font-size: 2rem;
+}
+.text-container p {
+    max-width: 650px;
+    margin: auto;
+    padding: 1rem 1.5rem 0 1.5rem;
+    font-size: 1rem;
+}
+
+.trial-card {
+    width: min(80%, 650px);
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem auto;
+}
+.trial-card p {
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+    width: 100%;
+    margin: auto;
+}
+.trial-card p span {
+    font-weight: 700;
+}
+
+form {
+    background-color: var(--white);
+    width: min(80%, 650px);
+    margin: auto;
+    padding: 1.3rem 1.1rem;
+    border-radius: 10px;
+}
+form div {
+    position: relative;
+    height: 100px;
+}
+
+input,
+form button {
+    width: 98%;
+    height: clamp(55px, 4vw, 50px);
+    border-radius: 5px;
+}
+input {
+    text-align: start;
+    padding: 1.2rem;
+    border: 1px var(--grayish_blue) solid;
+    margin-bottom: clamp(10px, 1vw, 15px);
+    color: var(--dark_blue);
+    font-weight: 500;
+}
+input:focus {
+    border-color: var(--blue);
+}
+input:placeholder-shown {
+    color: var(--grayish_blue);
+    font-weight: 500;
+}
+input:placeholder-shown:focus {
+    color: var(--blue);
+}
+
+/* error handling */
+form div p {
+    display: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--red);
+    float: right;
+    padding: 0rem 0.5rem 1rem 0;
+}
+form div img {
+    display: none;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+
+button {
+    background-color: var(--green);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+}
+button:hover,
+button:active {
+    background-color: var(--red);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+form p {
+    color: var(--grayish_blue);
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    font-weight: 600;
+}
+form p a {
+    color: var(--red);
+}
+
+@media only screen and (min-width: 1250px) {
+    .container {
+        flex-direction: row;
+    }
+    .text-container {
+        margin: 0;
+    }
+    .text-container,
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-container {
+        min-width: 650px;
+    }
+}
+
+.attribution {
+    padding: 2rem 0;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
