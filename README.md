@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/Ahtemarul-Hasan/intro-component-with-signup-form-master)
--   Live Site URL: [Add live site URL here](https://ahtemarul-hasan.github.io/intro-component-with-signup-form-master/)
+-   Solution URL: [Add solution URL here](https://github.com/Ahtemarul-Hasan/front_end_mentor_intro-component-with-signup-form-master/)
+-   Live Site URL: [Add live site URL here](https://ahtemarul-hasan.github.io/front_end_mentor_intro-component-with-signup-form-master/)
 
 ## My process
 
