@@ -102,7 +102,7 @@ form {
 }
 form div {
     position: relative;
-    height: 100px;
+    max-height: 100px;
 }
 
 input,
@@ -131,6 +131,16 @@ input:placeholder-shown:focus {
 }
 
 /* error handling */
+
+form div img {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+#first-name-error {
+    top: 15px;
+}
 form div p {
     display: none;
     font-size: 0.8rem;
@@ -138,12 +148,6 @@ form div p {
     color: var(--red);
     float: right;
     padding: 0rem 0.5rem 1rem 0;
-}
-form div img {
-    display: none;
-    position: absolute;
-    top: 18px;
-    right: 20px;
 }
 
 button {
